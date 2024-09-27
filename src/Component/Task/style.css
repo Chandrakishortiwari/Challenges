@@ -1,14 +1,74 @@
 .color{
     flex-direction: column-reverse;
 }
+.main {
+   
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-color:green;
+    padding: 20px; /* Adds some padding */
+    box-sizing: border-box; /* Includes padding in height and width */
+}
+.card{
+    display: flex;
+    height: 300px;
+    padding: 10px 22px  ;
+}
+.card-img-top{
+    height: 150px;
+    max-width: 370px;
+
+}
 .del-card{
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 15px;
     color: red;
     font-size: 20px;
 }
 .ptext{
     font-size: 20px;
     font-weight: 500;
+}
+
+/* For extra small screens like phones */
+@media screen and (width < 990px) and (width > 576px){
+    .main {
+        height: 1000px;
+        padding: 10px; /* Reduce padding on extra small screens */
+    }
+    .card{
+      
+        height: 300px;
+        padding: 10px 22px  ;
+    }
+    .card-img-top{
+        height: 100px;
+        max-width: 370px;
+    
+    }
+}
+@media (max-width: 580px) {
+    .main {
+        height: 1600px;
+        padding: 10px; /* Reduce padding on extra small screens */
+    }
+
+    .card {
+        
+        height: 200px;
+        padding: 10px; /* Reduce padding inside cards */
+    }
+
+    .card-img-top {
+        height: 70px; /* Smaller images on extra small screens */
+    }
+
+    .ptext {
+        font-size: 16px; /* Smaller font size for better readability */
+    }
+
+    .del-card {
+        font-size: 16px; /* Make close icon smaller */
+    }
 }
