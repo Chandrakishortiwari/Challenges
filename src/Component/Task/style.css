@@ -1,0 +1,14 @@
+.color{
+    flex-direction: column-reverse;
+}
+.del-card{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+    font-size: 20px;
+}
+.ptext{
+    font-size: 20px;
+    font-weight: 500;
+}
